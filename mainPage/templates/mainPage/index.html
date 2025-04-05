@@ -8,6 +8,26 @@
 <div class="container">
     <section>
         {% render_partial 'mainPage.views.header' %}
+        <!-- بخش اصلی -->
+        <div class="main-element">
+            <div class="main-right">
+                <div class="main-right-pic">
+                    <img src="{% static 'img/IMG_20250405_204657_874.jpg' %}" alt="{{ person.name }}">
+                </div>
+            </div>
+            <div class="main-left">
+                <h2> سلام {{ person.name }}<br/> هستم.</h2>
+                <h5>{{ person.occupations }}</h5>
+                <button class="main-left-rezome">رزومه من</button>
+            </div>
+        </div>
+        <!-- بخش درباره من -->
+        <div class="about-me">
+            <h1>درباره من</h1>
+            <span>
+                {{ person.about_us_text }}
+            </span>
+        </div>
     </section>
 </div>
 {% endblock %}
