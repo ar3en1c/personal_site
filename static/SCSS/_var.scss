@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Vazir';
+    font-weight: normal;
+    src: url('../fonts/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vazir';
+    font-weight: bold;
+    src: url('../fonts/Vazir-Bold.ttf') format('truetype');
+}
+
+$light_bg: #e9eaea;
+$vazir: "Vazir", serif;

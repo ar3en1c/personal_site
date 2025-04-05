@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'SCSS/header.css' %}">
+    {% block head_attr %}{% endblock %}
+</head>
+<body dir="rtl">
+{% block content %}
+{% endblock %}
+</body>
+{% block extraJs %}
+{% endblock %}
+</html>

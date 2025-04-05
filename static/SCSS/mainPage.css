@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Vazir";
+  font-weight: normal;
+  src: url("../fonts/Vazir.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vazir";
+  font-weight: bold;
+  src: url("../fonts/Vazir-Bold.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  background-color: #e9eaea;
+}
+
+.container {
+  width: 100%;
+}
+.container section {
+  background-color: white;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 5vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=mainPage.css.map */
