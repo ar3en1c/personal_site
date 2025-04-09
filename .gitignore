@@ -2,3 +2,5 @@
 .env
 .idea/
 static/img/
+run.ps1
+staticfiles/

@@ -13,3 +13,15 @@ class Person(models.Model):
     class Meta:
         verbose_name = 'شخص'
         verbose_name_plural = 'اشخاص'
+
+
+class Skills(models.Model):
+    name = models.CharField(max_length=100, verbose_name='نام مهارت')
+    percent = models.IntegerField(verbose_name='درصد مهارت')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'مهارت'
+        verbose_name_plural = 'مهارت ها'

@@ -1,33 +1,63 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load render_partial %}
+{% load thumbnail %}
 {% block head_attr %}
     <link rel="stylesheet" href="{% static 'SCSS/mainPage.css' %}">
 {% endblock %}
 {% block content %}
-<div class="container">
-    <section>
-        {% render_partial 'mainPage.views.header' %}
-        <!-- بخش اصلی -->
-        <div class="main-element">
-            <div class="main-right">
-                <div class="main-right-pic">
-                    <img src="{% static 'img/IMG_20250405_204657_874.jpg' %}" alt="{{ person.name }}">
+    <div class="container">
+        <section>
+            {% render_partial 'mainPage.views.header' %}
+            <!-- بخش اصلی -->
+            <div class="main-element">
+                <div class="main-right">
+                    <div class="main-right-pic">
+                        <img src="{% static 'img/IMG_20250405_204657_874.jpg' %}" alt="{{ person.name }}">
+                    </div>
+                </div>
+                <div class="main-left">
+                    <h2> سلام {{ person.name }}<br/> هستم.</h2>
+                    <h5>{{ person.occupations }}</h5>
+                    <button class="main-left-rezome">رزومه من</button>
                 </div>
             </div>
-            <div class="main-left">
-                <h2> سلام {{ person.name }}<br/> هستم.</h2>
-                <h5>{{ person.occupations }}</h5>
-                <button class="main-left-rezome">رزومه من</button>
-            </div>
-        </div>
-        <!-- بخش درباره من -->
-        <div class="about-me">
-            <h1>درباره من</h1>
-            <span>
+            <!-- بخش درباره من -->
+            <div class="about-me">
+                <h1>درباره من</h1>
+                <span>
                 {{ person.about_us_text }}
             </span>
-        </div>
-    </section>
-</div>
+            </div>
+            <!-- مهارت ها -->
+            <div class="skills">
+                <h1>مهارت ها</h1>
+                {% for skill in skills %}
+                    <div class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: {{ skill.percent }}%"></div>
+                        </div>
+                        <h3>{{ skill.name }}</h3>
+                    </div>
+                {% empty %}
+                    <p>هیچ مهارتی وجود ندارد.</p>
+                {% endfor %}
+            </div>
+            <!-- نمونه کار ها -->
+            <h1 id="nemone-kar-title">نمونه کار ها</h1>
+            <div class="samples">
+                {% for sample in samples %}
+                    <div class="sample">
+                        {% thumbnail sample.image "1280x720" crop="center" quality=80 as im %}
+                            <img src="{{ im.url }}" alt="{{ sample.name }}">
+                        {% endthumbnail %}
+                        <a href="{{ sample.link }}" target="_blank">{{ sample.name }}</a>
+                        <p>{{ sample.description }}</p>
+                    </div>
+                {% empty %}
+                    <p>هیچ نمونه کاری وجود ندارد.</p>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
 {% endblock %}
