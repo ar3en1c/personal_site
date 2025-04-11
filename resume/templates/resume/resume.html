@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load render_partial %}
+{% load static %}
+{% block title %}
+	رزومه | عرفان قندی
+{% endblock %}
+{% block head_attr %}
+    <link rel="stylesheet" href="{% static 'SCSS/resume.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <section>
+            {% render_partial 'mainPage.views.header' %}
+
+
+
+
+            {% include 'footer.html' %}
+        </section>
+    </div>
+{% endblock %}

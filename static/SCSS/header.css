@@ -32,4 +32,13 @@ header a {
   color: black;
 }
 
+.copyright {
+  padding: 1.5rem 30rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #616161;
+  font-weight: normal;
+  border-top: 3px solid #e9eaea;
+}
+
 /*# sourceMappingURL=header.css.map */

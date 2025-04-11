@@ -25,3 +25,16 @@ class Skills(models.Model):
     class Meta:
         verbose_name = 'مهارت'
         verbose_name_plural = 'مهارت ها'
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=255, verbose_name="نام و نام خانوادگی")
+    mail = models.EmailField(max_length=255, verbose_name="ایمیل")
+    telegram_link = models.CharField(max_length=255, verbose_name="لینک تلگرام")
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'تماس'
+        verbose_name_plural = 'تماس ها'

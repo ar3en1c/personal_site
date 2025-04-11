@@ -11,7 +11,8 @@ class HomePageView(View):
         person = models.Person.objects.first()
         skills = models.Skills.objects.all().order_by('-percent')
         samples = SampleList.objects.filter(is_active=True).order_by('-id')[:6]
-        return render(request, 'mainPage/index.html', {'person': person , 'skills': skills , 'samples': samples})
+        contact  = models.Contact.objects.first()
+        return render(request, 'mainPage/index.html', {'person': person , 'skills': skills , 'samples': samples, 'contact': contact})
 
 
 def header(request):

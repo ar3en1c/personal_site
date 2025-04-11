@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from mainPage.models import Person, Skills
+from mainPage.models import Person, Skills, Contact
 
 
 # Register your models here.
@@ -13,3 +13,7 @@ class PersonAdmin(admin.ModelAdmin):
 class SkillsAdmin(admin.ModelAdmin):
     list_display = ('name', 'percent')
     sortable_by = ('percent',)
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'mail', 'telegram_link')

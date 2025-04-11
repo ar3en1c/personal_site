@@ -1,0 +1,19 @@
+@import "var";
+body {
+  margin: 0;
+  background-color: $light_bg;
+  font-family: $vazir;
+}
+.container {
+  width: 100%;
+
+  & section {
+    background-color: white;
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 5vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+}

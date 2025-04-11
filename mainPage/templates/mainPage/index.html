@@ -2,6 +2,9 @@
 {% load static %}
 {% load render_partial %}
 {% load thumbnail %}
+{% block title %}
+    عرفان قندی
+{% endblock %}
 {% block head_attr %}
     <link rel="stylesheet" href="{% static 'SCSS/mainPage.css' %}">
 {% endblock %}
@@ -19,7 +22,7 @@
                 <div class="main-left">
                     <h2> سلام {{ person.name }}<br/> هستم.</h2>
                     <h5>{{ person.occupations }}</h5>
-                    <button class="main-left-rezome">رزومه من</button>
+                    <a href="{% url 'resume' %}"><button class="main-left-rezome">رزومه من</button></a>
                 </div>
             </div>
             <!-- بخش درباره من -->
@@ -58,6 +61,21 @@
                     <p>هیچ نمونه کاری وجود ندارد.</p>
                 {% endfor %}
             </div>
+            <h2 id="contact-me">تماس با من</h2>
+            <!-- بخش تماس با من -->
+            <div class="contact-us">
+                <div class="contact-us-mail">
+                    <a href="mailto:{{ contact.mail }}">
+                        <img src="{% static 'img/email-svgrepo-com.svg' %}" alt="ایمیل"> <span>{{ contact.mail }}</span>
+                    </a>
+                </div>
+                <div class="contact-us-mail">
+                    <a href="{{ contact.telegram_link }}">
+                        <img src="{% static 'img/telegram-svgrepo-com.svg' %}" alt="ایمیل"> <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+            {% include 'footer.html' %}
         </section>
     </div>
 {% endblock %}

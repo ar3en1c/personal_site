@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class SampleConfig(AppConfig):
+class ResumeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'sample'
-    verbose_name = 'نمونه کار'
+    name = 'resume'
+    verbose_name = 'رزومه'
