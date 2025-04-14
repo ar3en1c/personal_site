@@ -2,7 +2,7 @@
 {% load render_partial %}
 {% load static %}
 {% block title %}
-	رزومه | عرفان قندی
+    رزومه | عرفان قندی
 {% endblock %}
 {% block head_attr %}
     <link rel="stylesheet" href="{% static 'SCSS/resume.css' %}">
@@ -11,9 +11,66 @@
     <div class="container">
         <section>
             {% render_partial 'mainPage.views.header' %}
+            <div class="resume-name">
+                <div class="main-right-pic">
+                    <img src="{% static 'img/IMG_20250405_204657_874.jpg' %}" alt="{{ person.name }}">
+                </div>
+                <div class="resume-name-toz">
+                    <h2>{{ person.name }}</h2>
+                    <h4>{{ person.occupations }}</h4>
+                </div>
+            </div>
 
+            <div class="contact-us">
+                <div class="contact-us-mail">
+                    <a href="mailto:{{ contact.mail }}">
+                        <img src="{% static 'img/email-svgrepo-com.svg' %}" alt="ایمیل"> <span>{{ contact.mail }}</span>
+                    </a>
+                </div>
+                <div class="contact-us-mail">
+                    <a href="{{ contact.telegram_link }}">
+                        <img src="{% static 'img/telegram-svgrepo-com.svg' %}" alt="ایمیل"> <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
 
+            <div class="hometown">
+                <img src="{% static 'img/home-svgrepo-com.svg' %}">
+                <span>اصفهان</span>
+            </div>
+            <!-- تحصیلات -->
+            <div class="tahsilat">
+                {% for foo in tahsilat %}
+                    <div class="details-tahsilat">
+                        <div class="right-tahsilat">
+                            <h3>{{ foo.name_reshte }}</h3>
+                            <p>{{ foo.name_university }}</p>
+                            <span>{{ foo.zaman_tahsil }}</span>
+                        </div>
+                        <div class="left-tahsilat">
+                            <img src="{{ foo.pic.url }}">
+                        </div>
 
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- سوابق کاری -->
+            <div class="savabagh-kar">
+                <h2>سوابق کاری</h2>
+                {% for foo in savabeghKari %}
+                    <div class="details-tahsilat">
+                        <div class="right-tahsilat">
+                            <h3>{{ foo.title_kari }}</h3>
+                            <p>{{ foo.mahl_kari }}</p>
+                            <span>{{ foo.zaman_kar }}</span>
+                        </div>
+                        <div class="left-tahsilat">
+                            <img src="{{ foo.pic.url }}">
+                        </div>
+
+                    </div>
+                {% endfor %}
+            </div>
 
             {% include 'footer.html' %}
         </section>
