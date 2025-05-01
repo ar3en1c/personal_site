@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load render_partial %}
+{% block title %}
+    نمونه کار ها
+{% endblock %}
+{% block head_attr %}
+    <link rel="stylesheet" href="{% static 'SCSS/sample.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <section>
+            {% render_partial 'mainPage.views.header' %}
+
+            <div class="sampleView">
+
+            </div>
+
+            {% include 'footer.html' %}
+        </section>
+    </div>
+{% endblock %}

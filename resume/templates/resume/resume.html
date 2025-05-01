@@ -71,7 +71,33 @@
                     </div>
                 {% endfor %}
             </div>
+            <!-- زبان های خارجی -->
+            <div class="zaban">
+                <h1>زبان های خارجی</h1>
+                {% for foo in zaban %}
+                    <div class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: {{ foo.percent }}%"></div>
+                        </div>
+                        <h3>{{ foo.name_zaban }}</h3>
+                    </div>
+                {% empty %}
+                    <p>هیچ زبانی وجود ندارد.</p>
+                {% endfor %}
+            </div>
 
+            <!-- مدارک -->
+            <div class="madarek">
+                <h1>مدارک</h1>
+                {% for madrak in madarek %}
+                    <div class="madarek-tekrar-pazir">
+                        <h3>{{ madrak.name_madrak }}</h3>
+                        <b>{{ madrak.sader_konande }}</b>
+                        <span>{{ madrak.date }}</span>
+                        <a href="{{ madrak.link }}">{{ madrak.link }}</a>
+                    </div>
+                {% endfor %}
+            </div>
             {% include 'footer.html' %}
         </section>
     </div>

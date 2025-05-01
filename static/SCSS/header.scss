@@ -22,6 +22,9 @@ header {
   a {
     text-decoration: none;
     color: black;
+    &:hover {
+      color: $secondry_color;
+    }
   }
 }
 

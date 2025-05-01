@@ -25,3 +25,25 @@ class SavabeghKari(models.Model):
     class Meta:
         verbose_name = 'کار'
         verbose_name_plural = 'محل های کار'
+
+
+class Zaban(models.Model):
+    name_zaban = models.CharField(max_length=255, verbose_name='نام زبان')
+    percent = models.IntegerField(verbose_name='درصد تسلط')
+    def __str__(self):
+        return self.name_zaban + ' ' + str(self.percent)
+    class Meta:
+        verbose_name = 'زبان'
+        verbose_name_plural = 'زبان ها'
+
+class Madarek(models.Model):
+    name_madrak = models.CharField(max_length=255, verbose_name='نام مدرک')
+    sader_konande = models.CharField(max_length=200, verbose_name='صادر کننده')
+    date = models.CharField(max_length=50, verbose_name='تاریخ صدور')
+    link = models.URLField(verbose_name='لینک مدرک')
+
+    def __str__(self):
+        return self.name_madrak + ' ' + self.sader_konande
+    class Meta:
+        verbose_name = 'مدرک'
+        verbose_name_plural = "مدارک"
