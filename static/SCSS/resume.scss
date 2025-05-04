@@ -14,6 +14,11 @@
   display: flex;
   margin: 5rem auto;
   gap: 10rem;
+  
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
 
   & &-toz {
     display: flex;
@@ -44,7 +49,8 @@
 .hometown {
   border-top: 2px solid #e9eaea;
   padding-top: 2rem;
-  margin: 0 $sizing 5rem;
+  @include size(margin, 0);
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
 
@@ -59,7 +65,7 @@
 }
 
 .tahsilat {
-  padding: 0 $sizing;
+  @include size(padding,0);
 
   & .details-tahsilat {
     border: 2px solid #e9eaea;
@@ -90,7 +96,8 @@
 }
 
 .savabagh-kar {
-  margin: 3rem 30rem 0;
+  @include size(margin,3rem);
+  margin-top: 0;
   padding-top: 1rem;
   border-top: 2px solid #e9eaea;
 
@@ -127,7 +134,7 @@
   flex-direction: column;
   gap: 0.05rem;
   margin-block: 5rem;
-  margin: 3rem $sizing;
+  @include size(margin,3rem);
   padding-top: 1rem;
   border-top: 2px solid #e9eaea;
 
@@ -163,7 +170,7 @@
 }
 
 .madarek{
-  margin: 3rem $sizing;
+  @include size(margin,3rem);
   display: flex;
   flex-direction: column;
   gap: 3rem;

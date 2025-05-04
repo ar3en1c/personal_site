@@ -16,7 +16,6 @@ $light_bg: #e9eaea;
 $secondry_color: #6942fe;
 $vazir: "Vazir", serif;
 $inria: "Inria Sans", sans-serif;
-$sizing: 30rem;
 $height-skill: 1.25vh;
 $size-font-title: 2.25rem;
 @mixin allNeed() {
@@ -42,12 +41,27 @@ $size-font-title: 2.25rem;
 
 @mixin contactMe() {
   .contact-us {
-    margin: 1rem $sizing 5rem;
+    margin: 1rem 30rem 5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-size: 1.25rem;
     direction: ltr;
+    @media (max-width: 1750px) {
+      margin: 1rem 20rem 5rem;
+    }
+    @media (max-width: 1500px) {
+      margin: 1rem 15rem 5rem;
+    }
+    @media (max-width: 1200px) {
+      margin: 1rem 10rem 5rem;
+    }
+    @media (max-width: 900px) {
+      margin: 1rem 5rem 5rem;
+    }
+    @media (max-width: 675px) {
+      margin: 1rem 3rem 5rem;
+    }
 
     & &-mail {
       display: flex;
@@ -68,5 +82,24 @@ $size-font-title: 2.25rem;
         width: 1.5rem;
       }
     }
+  }
+}
+
+@mixin size($noe , $first) {
+  #{$noe}: $first 30rem;
+  @media (max-width: 1750px) {
+    #{$noe}: $first 20rem;
+  }
+  @media (max-width: 1500px) {
+    #{$noe}: $first 15rem;
+  }
+  @media (max-width: 1200px) {
+    #{$noe}: $first 10rem;
+  }
+  @media (max-width: 900px) {
+    #{$noe}: $first 5rem;
+  }
+  @media (max-width: 675px) {
+    #{$noe}: $first 3rem;
   }
 }

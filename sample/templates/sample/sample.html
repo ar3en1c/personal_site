@@ -13,10 +13,28 @@
             {% render_partial 'mainPage.views.header' %}
 
             <div class="sampleView">
-
+                <h1>نمونه کار ها</h1>
+                <div class="samples-grid">
+                    {% for sample in sample_list %}
+                        <a href="{{ sample.link }}" class="sample-card" target="_blank">
+                            <div class="sample-image">
+                                <img src="{{ sample.image.url }}" alt="{{ sample.name }}">
+                            </div>
+                            <div class="sample-content">
+                                <h3>{{ sample.name }}</h3>
+                                <div class="sample-description">
+                                    <p>{{ sample.description }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
             </div>
 
             {% include 'footer.html' %}
         </section>
     </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'JS/sample.js' %}"></script>
 {% endblock %}

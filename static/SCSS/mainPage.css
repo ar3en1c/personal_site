@@ -34,6 +34,12 @@ body {
   gap: 10rem;
   font-weight: normal;
 }
+@media (max-width: 1100px) {
+  .main-element {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+}
 .main-element .main-right-pic img {
   object-fit: cover;
   width: 400px;
@@ -67,6 +73,31 @@ body {
 .about-me h1 {
   font-size: 2.25rem;
 }
+@media (max-width: 1750px) {
+  .about-me {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .about-me {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .about-me {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .about-me {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .about-me {
+    padding: 0 3rem;
+  }
+}
 .about-me span {
   color: #616161;
   line-height: 2rem;
@@ -81,6 +112,31 @@ body {
   gap: 0.05rem;
   margin-block: 5rem;
   padding: 0 30rem;
+}
+@media (max-width: 1750px) {
+  .skills {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .skills {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .skills {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .skills {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .skills {
+    padding: 0 3rem;
+  }
 }
 .skills h1 {
   font-size: 2.25rem;
@@ -119,6 +175,36 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+@media (max-width: 1750px) {
+  .samples {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .samples {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .samples {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .samples {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .samples {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 1100px) {
+  .samples {
+    grid-template-columns: 1fr;
+  }
+}
 .samples .sample {
   display: flex;
   flex-direction: column;
@@ -134,6 +220,18 @@ body {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1100px) {
+  .samples .sample img {
+    width: 500px;
+    height: 333px;
+  }
+}
+@media (max-width: 750px) {
+  .samples .sample img {
+    width: 100%;
+    height: auto;
+  }
 }
 .samples .sample a {
   text-decoration: none;
@@ -156,15 +254,70 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (max-width: 1100px) {
+  .samples .sample p {
+    overflow: unset;
+  }
+}
 
 #nemone-kar-title {
   padding: 0 30rem;
   font-size: 2.25rem;
 }
+@media (max-width: 1750px) {
+  #nemone-kar-title {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  #nemone-kar-title {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  #nemone-kar-title {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  #nemone-kar-title {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  #nemone-kar-title {
+    padding: 0 3rem;
+  }
+}
 
 #contact-me {
   padding: 0 30rem;
   font-size: 2.25rem;
+}
+@media (max-width: 1750px) {
+  #contact-me {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  #contact-me {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  #contact-me {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  #contact-me {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  #contact-me {
+    padding: 0 3rem;
+  }
 }
 
 .contact-us {
@@ -174,6 +327,31 @@ body {
   gap: 1rem;
   font-size: 1.25rem;
   direction: ltr;
+}
+@media (max-width: 1750px) {
+  .contact-us {
+    margin: 1rem 20rem 5rem;
+  }
+}
+@media (max-width: 1500px) {
+  .contact-us {
+    margin: 1rem 15rem 5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .contact-us {
+    margin: 1rem 10rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .contact-us {
+    margin: 1rem 5rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .contact-us {
+    margin: 1rem 3rem 5rem;
+  }
 }
 .contact-us .contact-us-mail {
   display: flex;

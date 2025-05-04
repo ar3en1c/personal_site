@@ -19,12 +19,12 @@ header {
   margin-bottom: 5rem;
 }
 header .header-right {
-  width: 80%;
+  width: 70%;
   display: flex;
   gap: 5rem;
 }
 header .header-left {
-  width: 20%;
+  width: 30%;
   text-align: left;
 }
 header a {
@@ -42,6 +42,31 @@ header a:hover {
   color: #616161;
   font-weight: normal;
   border-top: 3px solid #e9eaea;
+}
+@media (max-width: 1750px) {
+  .copyright {
+    padding: 1.5rem 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .copyright {
+    padding: 1.5rem 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .copyright {
+    padding: 1.5rem 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .copyright {
+    padding: 1.5rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .copyright {
+    padding: 1.5rem 3rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -28,4 +28,108 @@ body {
   border-radius: 1rem;
 }
 
+.sampleView {
+  margin: 0 30rem;
+  padding: 2rem 0;
+}
+@media (max-width: 1750px) {
+  .sampleView {
+    margin: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .sampleView {
+    margin: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .sampleView {
+    margin: 0 10rem;
+  }
+}
+@media (max-width: 900px) {
+  .sampleView {
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .sampleView {
+    margin: 0 3rem;
+  }
+}
+.sampleView h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+}
+.sampleView .samples-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+.sampleView .sample-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 300px;
+}
+.sampleView .sample-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.sampleView .sample-card:hover .sample-content {
+  background: rgba(0, 0, 0, 0.7);
+  height: auto;
+}
+.sampleView .sample-card:hover .sample-content .sample-description {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 200px;
+  transition-delay: 0.2s;
+}
+.sampleView .sample-card .sample-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.sampleView .sample-card .sample-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.sampleView .sample-card .sample-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 60px;
+  overflow: hidden;
+}
+.sampleView .sample-card .sample-content h3 {
+  margin: 0;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.sampleView .sample-card .sample-content .sample-description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 1rem;
+  max-height: 0;
+}
+
 /*# sourceMappingURL=sample.css.map */

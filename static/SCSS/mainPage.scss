@@ -8,6 +8,11 @@
   margin: auto;
   gap: 10rem;
   font-weight: normal;
+  
+  @media (max-width: 1100px) {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
 
   & .main-right {
     &-pic {
@@ -49,7 +54,7 @@
 
   font-size: 1.25rem;
   margin-block: 5rem;
-  padding: 0 $sizing;
+  @include size(padding,0);
 
   & span {
     color: #616161;
@@ -66,7 +71,7 @@
   flex-direction: column;
   gap: 0.05rem;
   margin-block: 5rem;
-  padding: 0 $sizing;
+  @include size(padding,0);
 
   & h1 {
     font-size: $size-font-title;
@@ -105,10 +110,14 @@
 
 .samples {
   display: grid;
-  padding: 0 $sizing;
+  @include size(padding,0);
   margin-block: 5rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
 
   & .sample {
     display: flex;
@@ -125,6 +134,15 @@
       object-fit: cover;
       border-radius: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: 1100px) {
+        width: 500px;
+        height: 333px;
+      }
+      @media (max-width: 750px) {
+        width: 100%;
+        height: auto;
+      }
     }
 
     & a {
@@ -149,18 +167,22 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media (max-width: 1100px) {
+        overflow: unset;
+      }
     }
   }
 
 }
 
 #nemone-kar-title {
-  padding: 0 $sizing;
+  @include size(padding,0);
   font-size: $size-font-title;
 }
 
 #contact-me {
-  padding: 0 $sizing;
+  @include size(padding,0);
   font-size: $size-font-title;
 }
 
