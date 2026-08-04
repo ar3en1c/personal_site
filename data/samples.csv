@@ -1,0 +1,5 @@
+﻿name,description,image,link,is_active
+سایت فیلم و سریال,Avengers یک سایت فیلم و سریال است که با React ساخته شده است. این یک پروژه دانشگاهی است که تسلط من بر REST API در PHP را نشان می دهد. پایگاه داده استفاده شده SQLite است.,media/sample_images/avengers-screenshot_Custom.png,https://github.com/ar3en1c/project_r2,1
+سه تای برتر,این پروژه همانند یک ارائه پاورپوینت سه تای برتر را نشان میدهد,media/sample_images/6315e7f1-6f64-464e-88d3-c91d5c56ccbe_Custom.png,https://ar3en1c.github.io/top3-v2,1
+هومان تجارت مهام,سایت شرکت بازرگانی هومان تجارت مهام که با استفاده از فریم ورک جنگو طراحی شد.,media/sample_images/Screenshot_160_Custom.png,https://hoomman.com,1
+مینی چت,پروژه مینی چت که توسط جنگو و وب سوکت نوشته شده است.,media/sample_images/Screenshot_160_Custom_ZlMLksQ.png,https://github.com/ar3en1c/django_websocket,0

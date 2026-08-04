@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@font-face {
+  font-family: "Vazir";
+  font-weight: normal;
+  src: url("../fonts/Vazir.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vazir";
+  font-weight: bold;
+  src: url("../fonts/Vazir-Bold.ttf") format("truetype");
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+header {
+  display: flex;
+  padding: 0 2rem;
+  font-family: "Vazir", serif;
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+header .header-right {
+  width: 70%;
+  display: flex;
+  gap: 5rem;
+}
+header .header-left {
+  width: 30%;
+  text-align: left;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: #6942fe;
+}
+
+.copyright {
+  padding: 1.5rem 30rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #616161;
+  font-weight: normal;
+  border-top: 3px solid #e9eaea;
+}
+@media (max-width: 1750px) {
+  .copyright {
+    padding: 1.5rem 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .copyright {
+    padding: 1.5rem 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .copyright {
+    padding: 1.5rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .copyright {
+    padding: 1.5rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .copyright {
+    padding: 1.5rem 3rem;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

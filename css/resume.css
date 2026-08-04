@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@font-face {
+  font-family: "Vazir";
+  font-weight: normal;
+  src: url("../fonts/Vazir.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vazir";
+  font-weight: bold;
+  src: url("../fonts/Vazir-Bold.ttf") format("truetype");
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #e9eaea;
+  font-family: "Vazir", serif;
+}
+
+.container {
+  width: 100%;
+}
+.container section {
+  background-color: white;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 5vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.main-right-pic img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 20rem;
+}
+
+.resume-name {
+  display: flex;
+  margin: 5rem auto;
+  gap: 10rem;
+}
+@media (max-width: 1200px) {
+  .resume-name {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+}
+.resume-name .resume-name-toz {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.resume-name .resume-name-toz h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+.resume-name .resume-name-toz h4 {
+  font-weight: normal;
+  color: #616161;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-us {
+  margin: 1rem 30rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.25rem;
+  direction: ltr;
+}
+@media (max-width: 1750px) {
+  .contact-us {
+    margin: 1rem 20rem 5rem;
+  }
+}
+@media (max-width: 1500px) {
+  .contact-us {
+    margin: 1rem 15rem 5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .contact-us {
+    margin: 1rem 10rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .contact-us {
+    margin: 1rem 5rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .contact-us {
+    margin: 1rem 3rem 5rem;
+  }
+}
+.contact-us .contact-us-mail {
+  display: flex;
+}
+.contact-us .contact-us-mail a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.contact-us .contact-us-mail a:hover {
+  color: #6942fe;
+}
+.contact-us .contact-us-mail img {
+  width: 1.5rem;
+}
+
+.contact-us {
+  border-top: 2px solid #e9eaea;
+  padding-top: 2rem;
+}
+
+.hometown {
+  border-top: 2px solid #e9eaea;
+  padding-top: 2rem;
+  margin: 0 30rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1750px) {
+  .hometown {
+    margin: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .hometown {
+    margin: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .hometown {
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .hometown {
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .hometown {
+    margin: 0 3rem;
+  }
+}
+.hometown img {
+  width: 1.5rem;
+  margin-inline: 1rem;
+}
+.hometown span {
+  font-size: 1.5rem;
+}
+
+.tahsilat {
+  padding: 0 30rem;
+}
+@media (max-width: 1750px) {
+  .tahsilat {
+    padding: 0 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .tahsilat {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .tahsilat {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .tahsilat {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .tahsilat {
+    padding: 0 3rem;
+  }
+}
+.tahsilat .details-tahsilat {
+  border: 2px solid #e9eaea;
+  border-radius: 20px;
+  display: flex;
+  margin-block: 2rem;
+}
+.tahsilat .details-tahsilat .left-tahsilat {
+  width: 20%;
+  padding: 1rem;
+}
+.tahsilat .details-tahsilat .left-tahsilat img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+}
+.tahsilat .details-tahsilat .right-tahsilat {
+  width: 80%;
+  padding: 1rem;
+}
+.tahsilat .details-tahsilat .right-tahsilat span {
+  color: #616161;
+}
+
+.savabagh-kar {
+  margin: 3rem 30rem;
+  margin-top: 0;
+  padding-top: 1rem;
+  border-top: 2px solid #e9eaea;
+}
+@media (max-width: 1750px) {
+  .savabagh-kar {
+    margin: 3rem 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .savabagh-kar {
+    margin: 3rem 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .savabagh-kar {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .savabagh-kar {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .savabagh-kar {
+    margin: 3rem 3rem;
+  }
+}
+.savabagh-kar .details-tahsilat {
+  border: 2px solid #e9eaea;
+  border-radius: 20px;
+  display: flex;
+  margin-block: 2rem;
+}
+.savabagh-kar .details-tahsilat .left-tahsilat {
+  width: 20%;
+  padding: 1rem;
+}
+.savabagh-kar .details-tahsilat .left-tahsilat img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+}
+.savabagh-kar .details-tahsilat .right-tahsilat {
+  width: 80%;
+  padding: 1rem;
+}
+.savabagh-kar .details-tahsilat .right-tahsilat span {
+  color: #616161;
+}
+
+.zaban {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  margin-block: 5rem;
+  margin: 3rem 30rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e9eaea;
+}
+@media (max-width: 1750px) {
+  .zaban {
+    margin: 3rem 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .zaban {
+    margin: 3rem 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .zaban {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .zaban {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .zaban {
+    margin: 3rem 3rem;
+  }
+}
+.zaban .skill {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.zaban .skill .skill-bar {
+  direction: ltr;
+  width: 50%;
+  height: 1.25vh;
+  border-radius: 10px;
+  background-color: #e9eaea;
+  display: flex;
+}
+.zaban .skill .skill-bar .skill-bar-fill {
+  background-color: #6942fe;
+  height: 1.25vh;
+  border-radius: 10px;
+}
+.zaban .skill h3 {
+  text-align: left;
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.madarek {
+  margin: 3rem 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 2px solid #e9eaea;
+  padding-top: 1rem;
+  font-family: "Vazir", serif;
+}
+@media (max-width: 1750px) {
+  .madarek {
+    margin: 3rem 20rem;
+  }
+}
+@media (max-width: 1500px) {
+  .madarek {
+    margin: 3rem 15rem;
+  }
+}
+@media (max-width: 1200px) {
+  .madarek {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .madarek {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 675px) {
+  .madarek {
+    margin: 3rem 3rem;
+  }
+}
+.madarek .madarek-tekrar-pazir {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #e9eaea;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.madarek .madarek-tekrar-pazir span, .madarek .madarek-tekrar-pazir b, .madarek .madarek-tekrar-pazir a {
+  margin-right: 0.5rem;
+}
+.madarek .madarek-tekrar-pazir a {
+  direction: ltr;
+  color: #6942fe;
+}
+.madarek .madarek-tekrar-pazir a:hover {
+  color: black;
+}
+.madarek .madarek-tekrar-pazir span {
+  color: #616161;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/*# sourceMappingURL=resume.css.map */
