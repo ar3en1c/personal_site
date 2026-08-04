@@ -4,6 +4,8 @@
 static/img/
 run.ps1
 staticfiles/
+db.sqlite3
+static_site/
 **/__pycache__/
 */__pycache__/
 *.pyc

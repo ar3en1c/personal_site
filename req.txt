@@ -2,8 +2,6 @@ asgiref==3.8.1
 Django==5.1.7
 django-render-partial==0.4
 gunicorn==23.0.0
-mysql-connector-python==9.2.0
-mysqlclient==2.2.7
 packaging==25.0
 pillow==11.1.0
 python-decouple==3.8
