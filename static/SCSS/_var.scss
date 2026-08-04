@@ -94,12 +94,18 @@ $size-font-title: 2.25rem;
     #{$noe}: $first 15rem;
   }
   @media (max-width: 1200px) {
-    #{$noe}: $first 10rem;
+    #{$noe}: $first 5rem;
   }
   @media (max-width: 900px) {
     #{$noe}: $first 5rem;
   }
   @media (max-width: 675px) {
     #{$noe}: $first 3rem;
+  }
+}
+
+html{
+  @media (max-width: 1200px) {
+    font-size: 20px;
   }
 }

@@ -9,6 +9,12 @@
   font-weight: bold;
   src: url("../fonts/Vazir-Bold.ttf") format("truetype");
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 header {
   display: flex;
   padding: 0 2rem;
@@ -55,7 +61,7 @@ header a:hover {
 }
 @media (max-width: 1200px) {
   .copyright {
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 5rem;
   }
 }
 @media (max-width: 900px) {

@@ -9,6 +9,12 @@
   font-weight: bold;
   src: url("../fonts/Vazir-Bold.ttf") format("truetype");
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   margin: 0;
   background-color: #e9eaea;
@@ -44,7 +50,7 @@ body {
 }
 @media (max-width: 1200px) {
   .sampleView {
-    margin: 0 10rem;
+    margin: 0 5rem;
   }
 }
 @media (max-width: 900px) {

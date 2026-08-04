@@ -9,6 +9,12 @@
   font-weight: bold;
   src: url("../fonts/Vazir-Bold.ttf") format("truetype");
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   margin: 0;
   background-color: #e9eaea;
@@ -85,7 +91,7 @@ body {
 }
 @media (max-width: 1200px) {
   .about-me {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -125,7 +131,7 @@ body {
 }
 @media (max-width: 1200px) {
   .skills {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -187,7 +193,7 @@ body {
 }
 @media (max-width: 1200px) {
   .samples {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -276,7 +282,7 @@ body {
 }
 @media (max-width: 1200px) {
   #nemone-kar-title {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -306,7 +312,7 @@ body {
 }
 @media (max-width: 1200px) {
   #contact-me {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {

@@ -9,6 +9,12 @@
   font-weight: bold;
   src: url("../fonts/Vazir-Bold.ttf") format("truetype");
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   margin: 0;
   background-color: #e9eaea;
@@ -138,7 +144,7 @@ body {
 }
 @media (max-width: 1200px) {
   .hometown {
-    margin: 0 10rem;
+    margin: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -174,7 +180,7 @@ body {
 }
 @media (max-width: 1200px) {
   .tahsilat {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -228,7 +234,7 @@ body {
 }
 @media (max-width: 1200px) {
   .savabagh-kar {
-    margin: 3rem 10rem;
+    margin: 3rem 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -285,7 +291,7 @@ body {
 }
 @media (max-width: 1200px) {
   .zaban {
-    margin: 3rem 10rem;
+    margin: 3rem 5rem;
   }
 }
 @media (max-width: 900px) {
@@ -346,7 +352,7 @@ body {
 }
 @media (max-width: 1200px) {
   .madarek {
-    margin: 3rem 10rem;
+    margin: 3rem 5rem;
   }
 }
 @media (max-width: 900px) {
