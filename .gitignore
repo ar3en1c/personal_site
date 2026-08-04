@@ -1,0 +1,4 @@
+.myenv/
+.env
+.idea/
+run.ps1
